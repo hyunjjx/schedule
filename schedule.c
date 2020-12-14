@@ -105,6 +105,7 @@ void* sched_genSchedInfo(char* name, char* place, int type, int month, int day)
 //get month information from the scheduler info structure
 int sched_getMonth(void* obj)
 {
+	//get month of schedInfo
 	schedInfo_t* schedPtr = (schedInfo_t*)obj;
 	int month;
 
@@ -120,6 +121,7 @@ int sched_getMonth(void* obj)
 //get type information from the scheduler info structure
 int sched_getType(void* obj)
 {
+	//get type of schedInfo(int)
 	schedInfo_t* schedPtr;
 	schedPtr = (schedInfo_t*)obj;
 
